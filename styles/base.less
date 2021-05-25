@@ -59,10 +59,11 @@ atom-text-editor {
 }
 
 .syntax--keyword {
-  color: @purple;
+  color: @green;
 
   &.syntax--control {
-    color: @purple;
+    color: @green;
+    font-weight: bold;
   }
 
   &.syntax--operator {
@@ -70,27 +71,28 @@ atom-text-editor {
   }
 
   &.syntax--other.syntax--special-method {
-    color: @blue;
+    color: @cyan;
   }
 
   &.syntax--other.syntax--unit {
-    color: @orange;
+    color: @red;
   }
 }
 
 .syntax--storage {
-  color: @purple;
+  color: @green;
+  font-weight: bold;
 }
 
 .syntax--constant {
-  color: @orange;
+  color: @red;
 
   &.syntax--character.syntax--escape {
     color: @cyan;
   }
 
   &.syntax--numeric {
-    color: @orange;
+    color: @light-orange;
   }
 
   &.syntax--other.syntax--color {
@@ -120,7 +122,7 @@ atom-text-editor {
 }
 
 .syntax--string {
-  color: @green;
+  color: @purple;
 
 
   &.syntax--regexp {
@@ -177,7 +179,7 @@ atom-text-editor {
   }
 
   &.syntax--function  {
-    color: @cyan;
+    color: @blue;
 
     &.syntax--any-method {
       color: @blue;
@@ -188,10 +190,11 @@ atom-text-editor {
 .syntax--entity {
   &.syntax--name.syntax--function {
     color: @blue;
+    font-weight: bold;
+
   }
   &.syntax--name.syntax--type {
     color: @light-orange;
-    text-decoration: underline;
   }
 
   &.syntax--other.syntax--inherited-class {
@@ -215,6 +218,7 @@ atom-text-editor {
 
     &.syntax--id {
       color: @blue;
+
     }
   }
 }
@@ -233,7 +237,7 @@ atom-text-editor {
   }
 
   &.syntax--selector {
-    color: @purple;
+    color: @green;
   }
 
   &.syntax--separator {
